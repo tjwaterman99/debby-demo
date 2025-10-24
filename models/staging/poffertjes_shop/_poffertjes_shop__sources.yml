@@ -1,0 +1,24 @@
+sources:
+  - name: poffertjes_shop
+    description: Information about our Poffertjes busines
+    tables:
+      - name: orders
+        description: Table containing all orders placed at one of our shops
+        meta:
+          external_location: data/poffertjes_orders.csv
+        columns:
+          - name: order_id
+            description: Unique identifier for an order
+            tests:
+              - not_null
+              - unique
+      - name: shops
+        description: Table containing information about all of our shops
+        meta:
+          external_location: data/poffertjes_shops.csv
+        columns:
+          - name: shop_id
+            description: Unique identifier for a shop
+            tests:
+              - not_null
+              - unique

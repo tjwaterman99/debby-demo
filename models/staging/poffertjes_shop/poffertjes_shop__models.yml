@@ -1,0 +1,17 @@
+models:
+  - name: stg_poffertjes_shop__orders
+    description: Table containing all orders placed at one of our shops
+    columns:
+      - name: order_id
+        description: Unique identifier for an order
+        tests:
+          - not_null
+          - unique
+  - name: stg_poffertjes_shop__shops
+    description: Table containing information about all of our shops
+    columns:
+      - name: shop_id
+        description: Unique identifier for a shop
+        tests:
+          - not_null
+          - unique

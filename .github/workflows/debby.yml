@@ -13,9 +13,9 @@ jobs:
 
       # install the dbt adapter you're using
       - run: pip install dbt-core dbt-duckdb
-      
+
       # generate a manifest.json for debby to use
-      - run: dbt parse 
+      - run: dbt deps && dbt parse 
       
       # run the action
-      - uses: tjwaterman99/debby-actions@v0.1.0
+      - uses: tjwaterman99/debby-actions@v0.2.0

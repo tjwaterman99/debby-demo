@@ -1,0 +1,17 @@
+[check_model_descriptions]
+enabled = true
+
+[check_source_freshness_tests]
+enabled = false
+
+[check_primary_key_tests]
+enabled = true
+
+[check_root_models]
+enabled = true
+
+[check_source_descriptions]
+enabled = true
+
+[check_source_table_descriptions]
+enabled = true
